@@ -21,10 +21,7 @@
         </intent-filter>
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-        <service android:name=".ServiceFloating"
-            android:exported="false"
-            android:enabled="true"
-            />
+
         <service android:name=".FloatingService"
             android:stopWithTask="false"
             android:exported="false"

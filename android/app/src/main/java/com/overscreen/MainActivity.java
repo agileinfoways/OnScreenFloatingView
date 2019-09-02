@@ -25,7 +25,6 @@ public class MainActivity extends ReactActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//         startWidget();
 //          navToPerm();
           runsService();
     }
@@ -35,11 +34,6 @@ public class MainActivity extends ReactActivity {
         super.onDestroy();
         Intent stopServiceIntent = new Intent(MainActivity.this, FloatingService.class);
         stopService(stopServiceIntent);
-    }
-
-    private void startWidget(){
-        Intent sIntent = new Intent(MainActivity.this,HUD.class);
-        startService(sIntent);
     }
 
     void runsService() {
